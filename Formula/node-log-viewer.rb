@@ -5,21 +5,21 @@
 class NodeLogViewer < Formula
   desc "New Relic log viewer for Node.js agent logs"
   homepage "https://github.com/newrelic/node-log-viewer"
-  version "0.5.0"
+  version "0.6.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/newrelic/node-log-viewer/releases/download/v0.5.0/nrlv_0.5.0_darwin_amd64.tar.gz"
-      sha256 "fc7c4cafcdac86cf24141a520430f716ac3c3ee9b3aeea6c9d7c3e61833dc3b5"
+      url "https://github.com/newrelic/node-log-viewer/releases/download/v0.6.0/nrlv_0.6.0_darwin_amd64.tar.gz"
+      sha256 "076a2d4d5dc11dc98340bc79e50e1477f687cdf577e3d9e80c94532fe6e513f2"
 
       define_method(:install) do
         bin.install "nrlv"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/newrelic/node-log-viewer/releases/download/v0.5.0/nrlv_0.5.0_darwin_arm64.tar.gz"
-      sha256 "fdac3d1afeee711c3460144bba24dff27430359080ad18949478618ecf8b52aa"
+      url "https://github.com/newrelic/node-log-viewer/releases/download/v0.6.0/nrlv_0.6.0_darwin_arm64.tar.gz"
+      sha256 "e6fd89cb400e5e8bcae7d67d8f8033047a6e1ae2e513bdb96fa0db78808459de"
 
       define_method(:install) do
         bin.install "nrlv"
@@ -29,15 +29,15 @@ class NodeLogViewer < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/newrelic/node-log-viewer/releases/download/v0.5.0/nrlv_0.5.0_linux_amd64.tar.gz"
-      sha256 "30bb5031b9a995db31748caa71d17dfb42f0783dbc3de76739772bf4ce323497"
+      url "https://github.com/newrelic/node-log-viewer/releases/download/v0.6.0/nrlv_0.6.0_linux_amd64.tar.gz"
+      sha256 "3a9681f0bda5a1ce084aa86ba0f6967119b41b752ec19e0369b2fca6304537d8"
       define_method(:install) do
         bin.install "nrlv"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/newrelic/node-log-viewer/releases/download/v0.5.0/nrlv_0.5.0_linux_arm64.tar.gz"
-      sha256 "dacbd493eb98201ff64eb97e9f531d670e0996ffbf1b759a7f030ccdcd268a76"
+      url "https://github.com/newrelic/node-log-viewer/releases/download/v0.6.0/nrlv_0.6.0_linux_arm64.tar.gz"
+      sha256 "4e6ef23f8c67938d55971144d355cf6e33b793d5ab824fe1e478689ff8909653"
       define_method(:install) do
         bin.install "nrlv"
       end
